@@ -1,5 +1,5 @@
 import React from 'react'
-import { Button, Card, CardBody } from 'reactstrap';
+import { Card, CardBody } from 'reactstrap';
 import { Link } from 'react-router-dom';
 import calculateAvgRating from '../utils/avgRating';
 

@@ -29,6 +29,8 @@ function Header() {
     const { userId, user } = TokenDecode();
 
     const headerRef = useRef(null);
+    const menuRef = useRef(null);
+
     const stickyHederFunc = () => {
         window.addEventListener('scroll', () => {
             if (document.body.scrollTop > 80 || document.documentElement.scrollTop > 80) {
@@ -56,6 +58,7 @@ function Header() {
         return window.removeEventListener("scroll", stickyHederFunc);
     })
 
+    const toggleMenu = () => menuRef.current?.classList.toggle("show_menu")
 
     return <header className="header" ref={headerRef} >
         <Container>
@@ -66,7 +69,7 @@ function Header() {
                         <img src={logo} alt="logo" />
                     </div>
 
-                    <div className="navigation">
+                    <div className="navigation" ref={menuRef} onClick={toggleMenu} >
                         <ul className="menu">
                             {
                                 nav_links.map((item, index) => (
@@ -85,7 +88,7 @@ function Header() {
 
                             {
                                 localStorage.getItem("autoToken") ? <>
-                                    <h5 className="mb-0">{user.username}</h5>
+                                    <h5 className="mb-0">{user?.username}</h5>
                                     <Button className="btn btn-dark" onClick={logout} >Logout</Button>
 
                                 </>
@@ -100,7 +103,7 @@ function Header() {
 
 
                         </div>
-                        <span className="mobile_menu">
+                        <span className="mobile_menu" onClick={toggleMenu}>
                             <i className="ri-menu-line"></i>
 
                         </span>
