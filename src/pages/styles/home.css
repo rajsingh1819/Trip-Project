@@ -1,0 +1,53 @@
+section{
+    margin-bottom: 5%;
+    
+}
+.hero_subtitile{
+    display: flex;
+    align-items: center;
+}
+
+.hero_subtitile img{
+    width: 2.3rem;
+    height: 2.3rem;
+}
+.hero_content h1{
+    font-size: 3.2rem;
+    font-weight: 600;
+    margin-top: 1rem;
+    margin-bottom: 2rem;
+    /* color:white; */
+}
+.hero_content h1 .highlight{
+    color: #e7c251;
+}
+.hero_content p{
+    font-size: 0.94rem;
+    /* color: var(--text-color); */
+    line-height: 2rem;
+    color:#978f74;
+}
+
+.hero_img-box img, .hero_img-box video{
+    width: 100%;
+    height: 350px;
+    border-radius: 20px;
+    border: 1px solid white;
+    object-fit: cover;
+}
+
+.services_subtitle{
+    font-size: 1.2rem;
+    font-weight: 500;
+    color: #ee6e6e;
+    font-family: cursive;
+}
+
+.services_title{
+    font-size: 2.5rem;
+    font-weight: 500;
+}
+.featured_tour_title{
+    font-size: 2.3rem;
+    font-weight: 500;
+}

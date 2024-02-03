@@ -1,0 +1,58 @@
+/* Common styles for both mobile and web */
+.footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding-top: 2.3rem;
+    padding-bottom: 10px;
+    background-color: rgb(49, 46, 46);
+    
+}
+
+.footer .logo, .footer .text {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+    color: white;
+}
+
+.logo a, .text span a {
+    text-decoration: none;
+    color: white;
+}
+
+.logo a {
+    font-size: 2rem;
+}
+
+.text span a {
+    font-size: 0.8rem;
+}
+.Copywrite span{
+    margin-top: 3rem;
+    bottom: 0;
+    display: flex;
+    color: white;
+    align-items: center;
+    justify-content: center;
+}
+
+/* Media query for screens smaller than 768px (typical mobile devices) */
+@media (max-width: 768px) {
+    .footer .logo, .footer .text {
+        
+        text-align: center; 
+    }
+
+    .logo a {
+        font-size: 1.5rem;
+        margin-bottom: 10px; /* Add some spacing between social icons on mobile */
+    }
+
+    .text span a {
+        font-size: 1rem;
+        margin-bottom: 5px; /* Add some spacing between navigation links on mobile */
+    }
+}

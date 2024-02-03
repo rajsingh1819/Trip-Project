@@ -1,0 +1,19 @@
+.btn {
+    border-radius: 20px;
+}
+
+.Text{
+    padding-top: 3rem;
+  /* align-items: center; */
+  text-align: center;
+}
+
+.thnak_you span i {
+    font-size: 4rem;
+    color: rgb(25, 194, 25);
+}
+
+.thnak_you h1{
+    font-size: 3.6rem;
+    font-family: cursive;
+}

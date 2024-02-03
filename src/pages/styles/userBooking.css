@@ -1,0 +1,32 @@
+/* Custom CSS for responsive table */
+.table-container {
+    margin: 20px auto;
+}
+
+.table-responsive {
+    overflow-x: auto;
+}
+
+.table {
+    width: 100%;
+    max-width: 100%;
+    margin-bottom: 1rem;
+    background-color: transparent;
+}
+
+.table th,
+.table td {
+    padding: 0.75rem;
+    text-align: center;
+}
+
+/* Media query for mobile devices */
+@media (max-width: 767px) {
+    .table th,
+    .table td {
+        padding: 0.5rem;
+    }
+}
+.table-responsive{
+    margin-bottom: 17rem;
+}
