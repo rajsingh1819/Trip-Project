@@ -9,7 +9,7 @@ function TokenDecode() {
     // login  user ID
     const { userId, setUserId } = useContext(UserType);
     const [user, setUser] = useState("");
-    console.log('user===>', user)
+    // console.log('user===>', user)
 
     useEffect(() => {
 
@@ -43,7 +43,8 @@ function TokenDecode() {
 
     return {
         userId,
-        user
+        user,
+        setUser
 
     }
 }

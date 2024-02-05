@@ -48,8 +48,20 @@ function UserBooking() {
             <Row>
                 <Col lg="12">
                     <div className="table-responsive">
+
+
                         <table className="table table-dark">
+                            <thead className='tr1'>
+                                <tr>
+
+                                    <th colSpan={7} >Booking Status</th>
+
+                                </tr>
+                            </thead>
                             <thead>
+
+
+
                                 <tr>
 
                                     <th scope="col">Tour</th>
@@ -67,7 +79,7 @@ function UserBooking() {
 
                                                 <tr key={index}>
 
-                                                    <td>{item.tourName}</td>
+                                                    <td className='Change'>{item.tourName}</td>
                                                     <td>{item.fullName}</td>
                                                     <td>{item.guestSize}</td>
                                                     <td>{item.userEmail}</td>
@@ -83,7 +95,11 @@ function UserBooking() {
 
 
 
-                                    : null
+                                    : (
+                                        <tr>
+                                            <td colSpan={5} className="text-center">No bookings available</td>
+                                        </tr>
+                                    )
 
 
                                 }

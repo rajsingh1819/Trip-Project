@@ -32,7 +32,11 @@
   .table-dark thead th {
     border: 1px solid #454d55; /* Border color for dark table */
   }
-  
+  .table .tr1{
+    display: none;
+   
+    
+  }
   /* Responsive Styles */
   @media (max-width: 767.98px) {
     .table th,
@@ -52,12 +56,24 @@
     .table thead {
       display: none;
     }
+    .table .tr1{
+       
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        height: 3rem;
+      }
   
     .table tbody tr {
       margin-bottom: 1rem;
       display: flex;
       flex-wrap: wrap;
       justify-content: space-between;
+    }
+    .table tbody .Change{
+        
+        
+        color:orange;
     }
   
     .table td {
