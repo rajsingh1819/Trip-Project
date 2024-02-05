@@ -1,32 +1,74 @@
-/* Custom CSS for responsive table */
-.table-container {
-    margin: 20px auto;
-}
+/* styles/userBooking.css */
 
 .table-responsive {
     overflow-x: auto;
-}
-
-.table {
+  }
+  
+  .table {
     width: 100%;
-    max-width: 100%;
     margin-bottom: 1rem;
-    background-color: transparent;
-}
-
-.table th,
-.table td {
+    color: #fff; /* Text color for the table */
+    border-collapse: collapse;
+  }
+  
+  .table th,
+  .table td {
     padding: 0.75rem;
-    text-align: center;
-}
-
-/* Media query for mobile devices */
-@media (max-width: 767px) {
+    vertical-align: top;
+    border: 1px solid #343a40; /* Border color for table rows */
+  }
+  
+  .table thead th {
+    vertical-align: bottom;
+    border: 2px solid #343a40; /* Border color for table header */
+  }
+  
+  .table-dark {
+    background-color: #343a40; /* Background color for table */
+  }
+  
+  .table-dark th,
+  .table-dark td,
+  .table-dark thead th {
+    border: 1px solid #454d55; /* Border color for dark table */
+  }
+  
+  /* Responsive Styles */
+  @media (max-width: 767.98px) {
     .table th,
     .table td {
-        padding: 0.5rem;
+      width: 100%;
+      box-sizing: border-box;
+      display: block;
+      text-align: center; /* Center align text for smaller screens */
     }
-}
-.table-responsive{
-    margin-bottom: 17rem;
-}
+  
+    .table th,
+    .table td {
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .table thead {
+      display: none;
+    }
+  
+    .table tbody tr {
+      margin-bottom: 1rem;
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+  
+    .table td {
+      width: 100%;
+      border: none;
+    }
+  
+    .table td:first-child:before {
+      content: attr(data-label);
+      font-weight: bold;
+      margin-bottom: 0.5rem;
+    }
+  }
+  

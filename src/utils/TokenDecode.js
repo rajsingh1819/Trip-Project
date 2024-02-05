@@ -9,13 +9,14 @@ function TokenDecode() {
     // login  user ID
     const { userId, setUserId } = useContext(UserType);
     const [user, setUser] = useState("");
+    console.log('user===>', user)
 
     useEffect(() => {
 
         const fetchUsers = async () => {
             if (!(localStorage.getItem("autoToken"))) {
 
-                return null
+                setUser(null);
             }
             else {
                 const token = localStorage.getItem("autoToken")

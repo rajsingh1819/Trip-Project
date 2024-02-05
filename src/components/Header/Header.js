@@ -26,7 +26,8 @@ const nav_links = [
 function Header() {
 
     const navigation = useNavigate();
-    const { userId, user } = TokenDecode();
+    const { user } = TokenDecode();
+    console.log('user===>', user);
 
     const headerRef = useRef(null);
     const menuRef = useRef(null);

@@ -1,6 +1,7 @@
-import React from 'react'
+import React, { useEffect } from 'react'
 import "./styles/home.css"
 import { Container, Row, Col } from 'reactstrap'
+
 
 import herroImg from "../assets/images/hero-img01.jpg"
 import herroImg02 from "../assets/images/hero-img02.jpg"
@@ -11,7 +12,12 @@ import SearchBar from '../shared/SearchBar'
 import ServiceList from '../services/ServiceList'
 import FeaturedTourList from '../Featured-tours/FeaturedTourList'
 import Newsletter from './Newsletter'
+import TokenDecode from '../utils/TokenDecode'
 function Home() {
+
+
+
+
     return (
         <>
             <section>

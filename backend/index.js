@@ -14,17 +14,14 @@ const PORT = process.env.PORT || 5000;
 const DB = process.env.MONGO_URL;
 
 
-app.get("/", (r, re) => {
-    re.send("Hello")
 
-})
 mongoose.connect(DB, {
     useNewUrlParser: true,
     useUnifiedTopology: true
 }).then(() => {
     console.log("Connected to MongoDB ");
 }).catch((error) => {
-    console.log("Error connection to MongoDB", err)
+    console.log("Error connection to MongoDB", error)
 })
 
 app.listen(PORT, () => {
