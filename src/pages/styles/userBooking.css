@@ -1,5 +1,9 @@
 /* styles/userBooking.css */
 
+.Container{
+  margin-bottom: 15%;
+
+}
 .table-responsive {
     overflow-x: auto;
   }

@@ -43,7 +43,7 @@ function UserBooking() {
     }, []);
 
     return (
-        <Container>
+        <Container className='Container'>
 
             <Row>
                 <Col lg="12">
