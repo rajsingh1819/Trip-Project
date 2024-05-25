@@ -25,7 +25,25 @@
     font-size: 1.1rem;
     font-weight:500;
 }
-.service_item p{
+/* .service_item p{
     font-size: 0.9rem;
     color: rgb(161, 140, 140);
-}
+} */
+
+
+
+
+.service_item .userMsg {
+    display: flex;
+    flex-direction: column;
+    margin-left: 12%;
+    position: relative;
+  }
+  
+  .service_item  .userMsg  .messageContent {
+    text-align: justify;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    color: rgb(146, 144, 144);
+  }
+  

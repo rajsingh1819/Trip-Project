@@ -39,6 +39,7 @@ function Home() {
                                     Molestiae tempora dignissimos, animi praesentium molestias
                                     perferendis porro expedita delectus. Soluta natus porro.
                                 </p>
+                                
 
                             </div>
                         </Col>
@@ -57,6 +58,8 @@ function Home() {
                                 <img src={herroImg02} alt='heroimg02' />
                             </div>
                         </Col>
+
+                        {/* search bar */}
                         <SearchBar />
                     </Row>
                 </Container>
@@ -68,7 +71,7 @@ function Home() {
                             <h5 className='services_subtitle'> What we serve</h5>
                             <h2 className='services_title'>We offer our best services</h2>
                         </Col>
-
+                        {/* Services */}
                         <ServiceList />
 
                     </Row>
